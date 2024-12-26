@@ -20,8 +20,8 @@ function HomePage() {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className=" lg:text-xl max-md:block max-md:overflow-y-scroll font-calibri text-center bg-gradient-to-b from-custom-blue to-custom-pink h-[100lvh]    min-h-[100lvh] bg-black-bg p-3 flex  gap-3 justify-center">
-      <div className="   no-scrollbar overflow-y-scroll  flex flex-col gap-4 rounded-lg bg-custom-black text-white-text p-4">
+    <div className=" lg:text-xl max-md:block max-md:overflow-y-scroll scroll-smooth font-calibri text-center bg-gradient-to-b from-custom-blue to-custom-pink h-[100lvh]    min-h-[100lvh] bg-black-bg p-3 flex  gap-3 justify-center">
+      <div className="   no-scrollbar overflow-y-scroll scroll-smooth  flex flex-col gap-4 rounded-lg bg-custom-black text-white-text p-4">
         <Profile
           name={contents.profile.name}
           lastName={contents.profile.lastName}
@@ -85,7 +85,7 @@ function HomePage() {
           ))}
         </div>
       </div>
-      <div className="  no-scrollbar  overflow-y-scroll  bg-white-text rounded-lg text-black-text p-4">
+      <div className="  no-scrollbar  overflow-y-scroll scroll-smooth bg-white-text rounded-lg text-black-text p-4">
         <Section title={contents.experience.title}>
           {contents.experience.experiences.map((experience, index) => (
             <Experience
