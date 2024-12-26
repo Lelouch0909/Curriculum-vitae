@@ -1,10 +1,35 @@
+import dockerCert from '../assets/certifications/Docker.pdf';
+import devopsCert from '../assets/certifications/devops.pdf';
+import pmCert from '../assets/certifications/gestionDeProjets.pdf';
+import careerCert from '../assets/certifications/chefDeProjet.pdf';
+import { 
+  FaJava, 
+  FaPython, 
+  FaDatabase, 
+  FaJs, 
+  FaReact, 
+  FaNode, 
+  FaDocker, 
+  FaGithub, 
+  FaAws,
+  FaCloud
+} from "react-icons/fa";
+import { 
+  SiSpring, 
+  SiNextdotjs, 
+  SiMongodb, 
+  SiPostgresql,
+  SiSelenium,
+  SiLangchain
+} from "react-icons/si";
+
 export const contents = {
   profile: {
     name: "Hermann",
     lastName: "Lontsi",
     job: "Software Engineer",
     summary:
-      "Passionate software developer with expertise in Java, Python, ReactJS, Node.js, and cloud technologies. Proven experience in building scalable applications, REST APIs, andmicroservices architectures. Strong background in DevOps practices (Docker, CI/CD) and cloud platforms (AWS, Huawei Cloud). Adept at prompt engineering for generative AI systems and fostering collaborative development environments.",
+      "Passionate software developer with expertise in Java, Python, ReactJS, Node.js, and cloud technologies. Proven experience in building scalable applications, REST APIs, and microservices architectures. Strong background in DevOps practices (Docker, CI/CD) and cloud platforms (AWS, Huawei Cloud). Adept at prompt engineering for generative AI systems and fostering collaborative development environments.",
   },
   contact: {
     mail: "lontsihermann01@gmail.com",
@@ -64,7 +89,7 @@ export const contents = {
       {
         title: "WELLTH: AI-driven Health Application",
         comment: "Team Project | 2023",
-        github: "https://github.com/Lelouch0909/WelltAppFront",
+        github: "https://github.com/Lelouch0909/WellthAppFront",
         descriptions: [
           "Web app using Generative AI to generate personalized dietary plans.",
           "Technologies: Node.js, Spring Boot, React, PostgreSQL.",
@@ -90,38 +115,87 @@ export const contents = {
       {
         name: "Docker Foundations Professional Certificate",
         issuer: "Docker",
-        file: "/src/assets/certifications/Docker.pdf",
+        file: dockerCert,
         description:
           "Certification awarded by Docker, certifying the ability to understand and utilize containers. It covers key Docker concepts, including the creation, management, and deployment of containers, essential for modern application development and DevOps environments.",
       },
       {
         name: "Becoming a DevOps Expert",
         issuer: "LinkedIn Learning",
-        file: "/src/assets/certifications/devops.pdf",
+        file: devopsCert,
         description:
           "This program covers DevOps tools and practices such as Continuous Integration/Continuous Delivery (CI/CD), infrastructure management with Terraform, and automation with Ansible. It fosters a culture of collaboration between development and operations teams for fast and efficient software delivery.",
       },
       {
         name: "Project Management",
         issuer: "PMI - Project Management Institute",
-        file: "/src/assets/certifications/gestionDeProjets.pdf",
+        file: pmCert,
         description:
           "This certification introduces the fundamental principles of project management, aligned with the PMBOK Guide. It covers areas such as planning, execution, risk management, and project completion.",
       },
       {
         name: "Career Essentials Certificate",
         issuer: "Microsoft & LinkedIn",
-        file: "/src/assets/certifications/chefDeProjet.pdf",
+        file: careerCert,
         description:
           "Certification that prepares individuals for the role of project manager, focusing on management skills and the preparation needed for handling complex project responsibilities.",
       },
-      {
-        name: "Cloud Advanced: Architecture and Technologies",
-        issuer: "Huawei ICT Academy",
-        file: "/src/assets/certifications/cloud.png",
-        description:
-          "Advanced cloud architecture and technologies certification.",
-      },
+      // {
+      //   name: "Cloud Advanced: Architecture and Technologies",
+      //   issuer: "Huawei ICT Academy",
+      //   file: "/assets/certifications/cloud.png",
+      //   description:
+      //     "Advanced cloud architecture and technologies certification.",
+      // },
     ],
+  },
+  // ... autres imports et contenus existants
+  skills: {
+    title: "SKILLS",
+    categories: [
+      {
+        name: "Programming Languages",
+        skills: [
+          { name: "Java", icon: FaJava },
+          { name: "Python", icon: FaPython },
+          { name: "SQL", icon: FaDatabase },
+          { name: "JavaScript", icon: FaJs }
+        ]
+      },
+      {
+        name: "Frameworks & Libraries",
+        skills: [
+          { name: "Spring Framework", icon: SiSpring },
+          { name: "LangChain", icon: SiLangchain },
+          { name: "ReactJS", icon: FaReact },
+          { name: "Next.js", icon: SiNextdotjs },
+          { name: "Node.js", icon: FaNode },
+          { name: "LangChain4j", icon: SiLangchain }
+        ]
+      },
+      {
+        name: "DevOps & CI/CD Tools",
+        skills: [
+          { name: "Docker", icon: FaDocker },
+          { name: "GitHub Actions", icon: FaGithub },
+          { name: "Selenium", icon: SiSelenium }
+        ]
+      },
+      {
+        name: "Cloud Technologies",
+        skills: [
+          { name: "AWS", icon: FaAws },
+          { name: "Huawei Cloud", icon: FaCloud }
+        ]
+      },
+      {
+        name: "Databases",
+        skills: [
+          { name: "MongoDB", icon: SiMongodb },
+          { name: "PostgreSQL", icon: SiPostgresql },
+          { name: "SQL", icon: FaDatabase }
+        ]
+      }
+    ]
   },
 };

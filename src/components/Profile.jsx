@@ -1,19 +1,20 @@
 import React from "react";
-
+import tof from '../assets/me.jpg'
 function Profile({ name, lastName, job }) {
   return (
     <div>
       <div className="flex items-center justify-around font-montserrat">
-        <div className="w-[100px] h-[100px] flex items-center justify-center bg-white rounded-full overflow-hidden">
+        <div className="border-solid border-4  w-24 h-24 lg:w-32 lg:h-32 flex items-center justify-center  rounded-full overflow-hidden shadow-lg shadow-gray-500/50">
           <img
-            src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+            src={tof}
             alt=""
+            className="w-full h-full object-cover"
           />
         </div>
         <div>
-          <p className="text-2xl text-gray-text">{name}</p>
-          <h1 className="text-4xl font-bold">{lastName}</h1>
-          <p className="text-sm text-gray-text">{job}</p>
+          <p className="text-2xl lg:text-3xl text-gray-text">{name}</p>
+          <h1 className="text-4xl lg:text-5xl font-bold">{lastName}</h1>
+          <p className="text-sm lg:text-base text-gray-text">{job}</p>
         </div>
       </div>
      
